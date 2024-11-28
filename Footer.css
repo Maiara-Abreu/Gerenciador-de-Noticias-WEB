@@ -1,0 +1,35 @@
+footer {
+    background-color: #be60be; /* Rosa claro para o fundo do rodapé */
+    color: #333333; /* Texto em cinza escuro */
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #DDA0DD; /* Lilás para o conteúdo secundário */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF; /* Links brancos */
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #DDA0DD; /* Lilás para o efeito de hover */
+}
+
+footer p {
+    color: #FFFFFF; /* Texto do parágrafo em branco */
+}

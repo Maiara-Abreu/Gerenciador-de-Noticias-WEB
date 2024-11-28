@@ -1,0 +1,109 @@
+/* FormularioContato.css */
+.formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.formulario-contato .mensagem {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario-contato .mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.formulario-contato .mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contato label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.formulario-contato textarea {
+    min-height: 100px;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formulario-contato button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+    background-color: #0056b3;
+}
+
+.formulario-contato button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .formulario-contato {
+        padding: 15px;
+    }
+
+    .formulario-contato h2 {
+        font-size: 20px;
+    }
+
+    .formulario-contato input,
+    .formulario-contato textarea {
+        font-size: 13px;
+    }
+
+    .formulario-contato button {
+        font-size: 14px;
+    }
+}

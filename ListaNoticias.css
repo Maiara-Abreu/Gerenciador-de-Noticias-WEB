@@ -1,0 +1,202 @@
+/* Estilo geral da lista de notícias */
+.noticias-lista {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Menos espaçamento entre as notícias */
+}
+
+/* Cada linha de notícia será uma "linha" que se assemelha à de uma tabela */
+.noticia-linha {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    padding: 10px; /* Menos padding para reduzir o espaço interno */
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #fff;
+    border-radius: 8px;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte em telas menores */
+}
+
+/* Estilo para os campos de título e descrição */
+.noticia-campo {
+    flex: 1; /* Permite que esses campos ocupem a largura disponível */
+    min-width: 120px; /* Ajustado para tornar os campos mais compactos */
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Espaço reduzido entre os campos */
+}
+
+.noticia-campo strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Estilo específico para a imagem */
+.imagem-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100px; /* Limita o tamanho da imagem para não ocupar muito espaço */
+}
+
+.imagem-pequena {
+    width: 80px;  /* Ajustado para a imagem ser menor */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px;  /* Arredonda as bordas da imagem */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para a imagem */
+}
+
+.noticia-campo p {
+    color: #555;
+    margin-top: 5px;
+    font-size: 0.9rem; /* Tamanho da fonte menor para otimizar o espaço */
+    line-height: 1.3;
+}
+
+/* Estilo para os botões de ação */
+.noticia-botoes {
+    display: flex;
+    gap: 8px; /* Espaçamento reduzido entre os botões */
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Permite que os botões quebrem em telas pequenas */
+    align-items: center;
+}
+
+.btn {
+    padding: 6px 12px; /* Botões mais compactos */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Efeito de hover nos botões */
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Estilo específico para cada tipo de botão */
+.btn.editar {
+    background-color: #ffb300;
+    color: #333;
+}
+
+.btn.excluir {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn.ativar {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn.visualizar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .noticia-linha {
+        flex-direction: column; /* Alinha os itens na vertical em telas pequenas */
+        gap: 10px;
+    }
+
+    .noticia-campo {
+        margin-right: 0; /* Remove o espaçamento extra nos campos */
+    }
+
+    .noticia-botoes {
+        justify-content: center; /* Alinha os botões ao centro em telas pequenas */
+    }
+
+    .btn {
+        font-size: 0.8rem; /* Ajusta o tamanho dos botões */
+    }
+}
+.adm-lista-noticias {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mensagem {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabela-noticias {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-noticias th,
+.tabela-noticias td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-noticias th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.tabela-noticias tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.botao-editar,
+.botao-excluir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.botao-editar {
+    background-color: #007bff;
+}
+
+.botao-editar:hover {
+    background-color: #0056b3;
+}
+
+.botao-excluir {
+    background-color: #dc3545;
+}
+
+.botao-excluir:hover {
+    background-color: #a71d2a;
+}
+
+.botao-editar svg,
+.botao-excluir svg {
+    margin-right: 5px;
+}

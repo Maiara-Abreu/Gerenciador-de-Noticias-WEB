@@ -1,0 +1,98 @@
+/* CadastroNoticia.css */
+
+/* Container principal do formulário */
+.formulario-noticia {
+    max-width: 600px; /* Ajustar para uma largura maior em telas grandes */
+    margin: 40px auto; /* Centralizar com margens automáticas */
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra suave */
+}
+
+/* Estilo do título */
+.formulario-noticia h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos do formulário */
+.formulario-noticia div {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos */
+.formulario-noticia label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo dos campos de input e textarea */
+.formulario-noticia input,
+.formulario-noticia textarea {
+    width: 100%; /* Garantir que ocupe toda a largura */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluir padding no cálculo da largura */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do textarea */
+.formulario-noticia textarea {
+    height: 160px; /* Diminuir a altura para que o formulário não fique tão grande */
+    resize: none; /* Remover o redimensionamento */
+}
+
+/* Estilo do botão */
+.formulario-noticia button {
+    width: 100%; /* Largura total do botão */
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+/* Efeito de hover no botão */
+.formulario-noticia button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da mensagem */
+.mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo de mensagem de sucesso */
+.mensagem.sucesso {
+    border: 1px solid #4CAF50;
+    background-color: #e0ffe0;
+    color: #4CAF50;
+}
+
+/* Estilo de mensagem de erro */
+.mensagem.erro {
+    border: 1px solid #f44336;
+    background-color: #ffe0e0;
+    color: #f44336;
+}
